@@ -123,7 +123,6 @@ class LogisticRegression:
         ###########################################################################
         y_proba = self.predict_proba(X, append_bias=True)
         y_pred = np.where(y_proba[:, 0] < 0.5, 0, 1)
-        #y_pred = np.argmax(y_proba, axis=1)
 
         ###########################################################################
         #                           END OF YOUR CODE                              #
